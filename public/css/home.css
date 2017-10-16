@@ -1,0 +1,5 @@
+/*DIV
+=====*/
+div#kotak {width: 500px;}
+.head {border-bottom: 1px solid white;}
+.head span {display: block;color: #fff;font-size: 26px;text-align: center;}

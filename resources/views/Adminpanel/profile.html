@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import CSS-->
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="asset/css/bootlize.min.css"  media="screen,projection"/>
+        <!--Import  ICON Social media-->
+        <link rel="stylesheet" href="asset/css/bootlize-sosmedicon.css"/>
+        <link rel="stylesheet" href="asset/css/theme.css">
+        <link rel="stylesheet" href="asset/css/profile.css">
+        <!--Import Google Icon Font (IF NEED )
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <!--Import Js-->
+        <script src="asset/js/jquery-3.2.1.min.js"></script>
+        <script src="asset/js/bootlize.min.js"></script>
+        <script src="asset/js/template.js"></script>
+</head>
+<body>
+    <!--Header-->
+<header>
+    <nav class="primarycolor">
+     <div class="container-fluid">
+      <a href="#" class="size size-2 left">KOPERASI</a>
+      <ul id="nav-mobile2" class="right">
+        <!-- SEARCH INPUT MD Up  -->
+        <li class="hidden-xs">
+           <form class="navbar-form navbar-left" material="off">  
+            <div class="form-group">  
+             <input type="text" class="form-control" placeholder="Search">
+            </div>  
+            <button type="submit" class="btn2 btn-default"><i class="material-icons">search</i></button>  
+            </form>
+        </li>
+        <!-- SEARCH INPUT MD Down  -->
+        <li class="search_mini visible-xs">
+            <a class="btn-search" href="#!"><i class="material-icons">search</i></a>
+            <div class="form-search row">
+            <form action="" material="off">
+                <div class="form-group">  
+                 <input type="text" name="" class="form-control" placeholder="Search...">  
+                </div>  
+            </form>
+            </div>
+            <script>
+            $('.btn-search').click(function(){
+                $('.form-search').toggle('fast'); 
+            });
+            </script>
+        </li>
+        <li class="hidden-sm hidden-xs">
+            <a class="dropdown-button hover" href="#!" data-activates="acc-setting" hover="true">
+                <img src="asset/img/profil/drl.jpg" alt="" class="acc-dp">
+                <span class="acc-title">IkhsaNDex</span>
+                <i class="material-icons tiny acc-row">arrow_drop_down</i>
+            </a>
+            <!-- Dropdown Structure -->
+            <ul id="acc-setting" class="dropdown-content">
+              <li><a href="#!"><i class="material-icons">settings</i>Edit Profile</a></li>
+              <li><a href="#!"><i class="material-icons">build</i>Account Setting</a></li>
+              <li class="divider"></li>
+              <li><a href="#!"><i class="material-icons">power_settings_new</i>LogOut</a></li>
+            </ul>
+            <script>
+            $(".dropdown-button").dropdown({
+                  inDuration: 300,
+                  outDuration: 300,
+                  constrainWidth: true, // Does not change width of dropdown to that of the activator
+                  hover: true, // Activate on hover
+            });
+            </script>
+        </li>
+        <li>
+            <a href="#" class="button-subnav show-on-large show-on-small"><i class="material-icons tombol-slidenavbar">menu</i></a>
+        </li>
+      </ul><!--/#nav-mobile2-->
+    </div><!--/.container-->
+  </nav>
+  <div class="subnav">
+      <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Peminjaman</a></li>
+          <li><a href="">Petugas</a></li>
+          <li><a href="">Detail pinjaman</a></li>
+      </ul>
+      <script>
+            $('.button-subnav').click(function(){
+                $('.subnav').toggle('fast'); 
+            });
+      </script>
+  </div><!--/.subnav-->
+</header>
+    <!--End Header-->
+<main>
+    <div id="ofname">
+        <h1>Profile of <span class="acc-name size">IkhsaNDex</span></h1>
+    </div><!--/#ofname-->
+    <div class="container">
+    <div class="row">
+        <div class="card-panel summary">
+            <div class="left">
+            <i class="material-icons">account_box</i><span>Summary</span>
+            </div>
+            <div class="right">
+                <a id="form-form" href="#!"><i class="material-icons">settings_applications</i><span>Edit profile</span></a>
+            </div>
+        </div>
+        <div class="col-md-3">
+        <div class="card-panel">
+            <span class="user-name">IkhsaNDex</span>
+            <!--KONDISI IF ELSE-->
+<!--            <span class="user-level" admin>Petugas || ADMIN </span>-->
+            <span class="user-level" sadmin>Operator || Super-ADMIN </span>
+<!--            <span class="user-level" guest>User || Guest </span>-->
+            <!--END IF ELSE-->
+            <img class="user-image" src="asset/img/profil/drl.jpg" alt="">
+            <a id="form-img" class="btn3 button-primary" href="#!">Edit Photo</a>
+            <form action="#" class="row user-edit-image">  
+              <div class="file-field input-field">  
+               <div class="btn col-xs-12">  
+                <span>Select Image</span>  
+                <input type="file">  
+               </div>
+               <div class="file-path-wrapper">  
+                <input class="file-path validate" type="text">  
+               </div>
+               <input type="submit" class="btn2 col-xs-12 btn-success" value="Change Photo">
+              </div>  
+            </form>
+        </div><!--/.card-panel-->
+        </div><!--/.col-->
+        <div class="col-md-9">
+        <div class="card-panel">
+            <div class="row">
+            <div class="data-komen col-xs-4">
+                <p class="tr">Username</p>
+                <p class="tr ea-form">Old Password</p>
+                <p class="tr ea-form">New Password</p>
+                <p class="tr ea-form">Reply Password</p>
+                <p class="tr">Email</p>
+                <p class="tr">Gender</p>
+                <p class="tr">Age</p>
+            </div><!--/.col-->
+            <div class="data-awal col-xs-8">
+                <p class="tr">IkhsaNDex</p>
+                <p class="tr">omegaexteravol@gmail.com</p>
+                <p class="tr">Men</p>
+                <p class="tr">17</p>
+            </div><!--/.col-->
+            <div class="user-edit-info col-xs-8 ea-form">
+                <form action="" material="off">
+                    <div class="form-group">    
+                        <input type="text" class="form-control"  placeholder="UserName">  
+                    </div> 
+                    <div class="form-group">    
+                        <input type="password" class="form-control"  placeholder="OldPassword">  
+                    </div>
+                    <div class="form-group">    
+                        <input type="password" class="form-control"  placeholder="NewsPassword">  
+                    </div> 
+                    <div class="form-group">    
+                        <input type="password" class="form-control"  placeholder="ReplyPassword">  
+                    </div> 
+                    <div class="form-group">    
+                        <input type="email" class="form-control"  placeholder="Email">  
+                    </div> 
+                    <div class="form-group">    
+                        <input type="text" class="form-control"  placeholder="Gender">  
+                    </div>
+                    <div class="form-group">    
+                        <input type="text" class="form-control"  placeholder="Age">  
+                    </div> 
+                    <input type="submit" value="SAVE" class="btn blue">
+                    <input id="cancel-form" type="button" value="CANCEL" class="btn red">
+                </form>
+            </div><!--/.col-->
+            </div>
+        </div><!--/.card-panel-->
+        </div><!--/.col-->
+    </div><!--/.row-->
+    </div><!--/.container-->
+</main>
+    <script>
+        $('#form-img').click(function(){
+            $('.user-edit-image').toggle('fast'); 
+        });
+        $('#form-form').click(function(){
+            $('.ea-form').toggle('fast'); 
+            $('.data-awal').toggle('fast');
+            document.getElementById('form-img').style.display = "block";
+            $('#form-form').toggle('fast');
+        });
+        $('#cancel-form').click(function(){
+            $('.ea-form').toggle('fast'); 
+            $('.data-awal').toggle('fast');
+            document.getElementById('form-img').style.display = "none";
+            $('#form-form').toggle('fast');
+            $('.user-edit-image').toggle('hide'); 
+        });
+    </script>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h5 class="white-text">BootLize CSS</h5>
+        <p class="grey-text text-lighten-4">Merupakan framework css yang menyatukan materialize dengan bootstrap, kami berupaya untuk membuat para frontend merasa nyaman saat membuat sebuah website.</p>
+      </div>
+      <div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2  col-sm-12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+          <li><a class="grey-text text-lighten-3" href="meetstaff.html">Meet the Staff</a></li>
+          <li><a class="grey-text text-lighten-3" href="http://materializecss.com/">Materialize</a></li>
+          <li><a class="grey-text text-lighten-3" href="http://www.getbootstrap.com/">Bootstrap</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2017 BootLize. All Rights Reserved | Theme by ExteraDex
+    <span class="right" href="#!">
+        <a href="" class="grey-text text-lighten-2">FAQ</a> |
+        <a href="" class="grey-text text-lighten-2">Privacy Policy</a> |
+        <a href="" class="grey-text text-lighten-2">DMCA</a> |
+        <a href="" class="grey-text text-lighten-2">Terms &amp; Conditions</a> 
+    </span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
